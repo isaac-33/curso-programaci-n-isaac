@@ -20,19 +20,19 @@ pygame.int()
 screen = pygame.display.set_mode((1000,800))
 
 #fondo de pantalla 
-background = pygame.image.load("/home/pc16/Descargas/juego/Fondo.png")
+background = pygame.image.load("fondo.jpg")
 
 # sonido de fondo 
-mixer.music.load("/home/pc16/Descargas/juego/sonido fondo.mp4")
+mixer.music.load("sonido fondo.mp4")
 mixer.music.play(-1)
 
 # titulo y icono 
-pygame. display.set_caption ("Perdidos en sigma land") 
-icon = pygame.mage.load("/home/pc16/Descargas/juego/Enemigo 2.png")
+pygame. display.set_caption ("Perdidos tierras quiros") 
+icon = pygame.mage.load("villano.png")
 pygame.display.set_icon(icon)
 
 #jugador
-PlayerImg=pygame.image.load("/home/pc16/Descargas/juego/nave .png")
+PlayerImg=pygame.image.load("PERSAONAJE.png")
 playerX= 370
 playery =480
 playerX_change=0
@@ -46,7 +46,7 @@ enemyY_change=[]
 num_of_enemies= 30
 
 for i in range(num_of_enemies):
-    enemyImg.append(pygame.image.load("/home/pc16/Descargas/juego/enemigo 1.png"))
+    enemyImg.append(pygame.image.load("VILLANO.png"))
     enemyX.append(random.randint(0.736))
     enemyY.append(random.randint(50,150))
     enemyX_change.append(4)
@@ -54,7 +54,7 @@ for i in range(num_of_enemies):
 
 #disparo, proyectil, bala 
 
-armaImg= pygame.image.load("/home/pc16/Descargas/juego/Bala. png")
+armaImg= pygame.image.load("BAla. png")
 armaX=0
 armaY=480
 armaX_change=0
